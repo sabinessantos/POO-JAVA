@@ -1,12 +1,10 @@
-package avalicao.unidade20221.faculdade.business;
+package avaliacao.unidade20221.faculdade.business;
 
 import java.util.List;
 
 import avaliacao.unidade20221.faculdade.domain.Disciplina;
 import avaliacao.unidade20221.faculdade.persistence.DisciplinaDAO;
-
  
-
 public class DisciplinaBO {
 
 	public void CadastrarDisciplina(Disciplina disciplina) {
@@ -14,7 +12,7 @@ public class DisciplinaBO {
 }
 
 
-public String BuscarMesa(String codigo) {
+public String BuscarDisciplina(String codigo) {
 	
 	
 	List<Disciplina> disciplinas = DisciplinaDAO.obterTodas();
@@ -33,5 +31,25 @@ public String BuscarMesa(String codigo) {
 	return codigo_escolhido;
 }
 	
+public void ListarDisciplina() {
+	List<Disciplina> disciplinas = DisciplinaDAO.obterTodas();
+	   
+	  System.out.println("******Disciplinas Disponiveis******");
+	for (Disciplina disciplina : disciplinas) {
+		
+		 System.out.println("\nCodigo: "+disciplina.getCodigo()+" Nome: "+disciplina.getNome()+" Carga Horaria: "+disciplina.getCarga_horaria());
+		}
+}
+
+public boolean VerificarDisciplina() {
+	 
+	List<Disciplina> disciplina = DisciplinaDAO.obterTodas();
+	if(disciplina.isEmpty()) {
+		return false;
+	}
+	else {
+		return true;
+	}
+}
 	
 }

@@ -3,18 +3,17 @@ package avaliacao.unidade20221.faculdade.persistence;
 import java.util.ArrayList;
 import java.util.List;
 
-import avaliacao.unidade20221.faculdade.domain.Professor;
 
 public class ProfessorDAO {
 
 	
-	private static List<Professor> professores = new ArrayList<>();
+	private static List<String> professores = new ArrayList<>();
 
-	public static void persistir(Professor professor) {
+	public static void persistir(String professor) {
 		professores.add(professor);
 	}
 
-	public static List<Professor> obterTodas() {
+	public static List<String> obterTodas() {
 		return new ArrayList<>(professores);
 	}
 }
