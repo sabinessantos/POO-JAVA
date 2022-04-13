@@ -16,4 +16,5 @@ public class TuiUtil {
 			System.out.println(texto);
 			return scanner.nextLine();
 		}
+	 
 }

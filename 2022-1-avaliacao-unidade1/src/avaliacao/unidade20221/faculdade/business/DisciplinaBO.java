@@ -23,7 +23,7 @@ public String BuscarDisciplina(String codigo) {
 		 
 		if(disciplina.getCodigo().equalsIgnoreCase(codigo)) {
 			
-			codigo_escolhido = "\nCodigo: "+disciplina.getCodigo()+" Nome: "+disciplina.getNome()+" Carga Horaria: "+disciplina.getCarga_horaria();
+			codigo_escolhido = "\nDisciplinas:\nNome: "+disciplina.getNome()+" Carga Horaria: "+disciplina.getCarga_horaria()+"\n\n";
 		 
 		}
  

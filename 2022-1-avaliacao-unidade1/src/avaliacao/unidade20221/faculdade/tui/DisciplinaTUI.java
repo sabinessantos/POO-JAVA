@@ -19,5 +19,6 @@ public class DisciplinaTUI {
     	Disciplina disciplina = new Disciplina(codigo,nome,cargaHoraria);
     	
     	Cadastrar_Disciplina.CadastrarDisciplina(disciplina);
+    	System.out.println("Disciplina cadastrada com sucesso");
 	}
 }

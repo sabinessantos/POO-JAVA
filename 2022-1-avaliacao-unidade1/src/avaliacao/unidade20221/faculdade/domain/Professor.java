@@ -4,9 +4,9 @@ public class Professor {
 
 	private int matricula;
 	private String nome;
-	private int numero;
+	private String numero;
  
-	public Professor(int matricula,String nome,int numero) {
+	public Professor(int matricula,String nome,String numero) {
 		super();
 		this.matricula = matricula;
 		this.nome = nome;
@@ -25,10 +25,10 @@ public class Professor {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public int getNumero() {
+	public String getNumero() {
 		return numero;
 	}
-	public void setNumero(int numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
 	}
  

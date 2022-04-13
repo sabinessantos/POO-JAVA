@@ -16,7 +16,7 @@ public class ProfessorBO {
      
 		DisciplinaBO disciplinabo = new DisciplinaBO();
 		
-		 String listaProfessor = "Matricula:"+disciplina.getMatricula()+"Nome:"+disciplina.getNome()+"Telefone:"+disciplina.getNumero()+""+disciplinabo.BuscarDisciplina(codigo);
+		 String listaProfessor = "Matricula: "+disciplina.getMatricula()+" Nome: "+disciplina.getNome()+" Telefone: "+disciplina.getNumero()+""+disciplinabo.BuscarDisciplina(codigo);
 		
 		ProfessorDAO.persistir(listaProfessor);
 }
